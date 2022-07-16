@@ -1,0 +1,40 @@
+﻿
+@model CoreDepartman.Models.Personel
+@{
+    ViewData["Title"] = "PersonelGetir";
+    Layout = "~/Views/Shared/_LayoutD.cshtml";
+}
+
+
+<form method="post" action="/Personelim/PersonelGuncelle">
+
+    @Html.LabelFor(x => x.PersonelID)
+    @Html.TextBoxFor(x => x.PersonelID, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.PersonelAD)
+    @Html.TextBoxFor(x => x.PersonelAD, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.PersonelSoyad)
+    @Html.TextBoxFor(x => x.PersonelSoyad, new { @class = "form-control" })
+    <br />
+
+    @Html.LabelFor(x => x.PersonelSehir)
+    @Html.TextBoxFor(x => x.PersonelSehir, new { @class = "form-control" })
+    <br />
+
+
+    Departman
+    @Html.DropDownListFor(x => x.Birim.BirimAD, (List<SelectListItem>)ViewBag.dgrr, new { @class = "form-control" })
+
+    <br />
+
+
+    <button class="btn btn-info"> Personel Güncelle</button>
+
+</form>
+
+
+
+
+
+

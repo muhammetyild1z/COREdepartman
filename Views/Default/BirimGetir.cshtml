@@ -1,0 +1,28 @@
+﻿@using CoreDepartman.Models;
+@model CoreDepartman.Models.Birim
+
+@{
+    ViewData["Title"] = "BirimGetir";
+    Layout = "~/Views/Shared/_LayoutD.cshtml";
+}
+
+
+@*@using (Html.BeginForm("depGuncelle", "Default", FormMethod.Post))
+{*@
+<form method="post" action="/Default/depGuncelle/@Model.BirimID">
+
+    @Html.LabelFor(x => x.BirimID)
+    @Html.TextBoxFor(x => x.BirimID, new { @class = "form-control", @disabled = "disabled" })
+    <br />
+    @Html.LabelFor(x => x.BirimAD)
+    @Html.TextBoxFor(x => x.BirimAD, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info"> departman güncelle</button>
+
+</form>
+
+@*}*@ 
+
+
+

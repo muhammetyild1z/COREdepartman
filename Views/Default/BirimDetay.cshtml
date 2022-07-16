@@ -1,0 +1,32 @@
+﻿@using CoreDepartman.Models;
+@model List<Personel>
+@{
+    ViewData["Title"] = "BirimDetay";
+    Layout = "~/Views/Shared/_LayoutD.cshtml";
+}
+
+
+<br />
+<h2>@ViewBag.brm Departmanı </h2>
+<hr />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.PersonelID</td>
+            <td> @item.PersonelAD</td>
+            <td> @item.PersonelSoyad</td>
+            <td> @item.PersonelSehir</td>
+            
+            
+        </tr>
+    }
+
+</table>

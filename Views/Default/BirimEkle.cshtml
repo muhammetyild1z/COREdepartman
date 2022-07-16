@@ -1,0 +1,16 @@
+﻿@model CoreDepartman.Models.Birim
+@{
+    ViewData["Title"] = "BirimEkle";
+    Layout = "~/Views/Shared/_LayoutD.cshtml";
+}
+
+<br />
+<form method="post">
+    @Html.LabelFor(x => x.BirimAD)
+    @Html.TextBoxFor(x => x.BirimAD, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info"> Departman Ekle</button>
+</form>
+
+
+
